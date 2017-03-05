@@ -13,19 +13,19 @@
 -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <link rel="stylesheet" href="/presentations/reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="/presentations/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="../../presentations/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../../presentations/reveal.js/css/theme/black.css">
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="/presentations/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="../../presentations/reveal.js/lib/css/zenburn.css">
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? '/presentations/reveal.js/css/print/pdf.css' : '/presentations/reveal.js/css/print/paper.css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../../presentations/reveal.js/css/print/pdf.css' : '../../presentations/reveal.js/css/print/paper.css';
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
-    <link href="/presentations/reveal.js/css/template.css" rel="stylesheet" /> </head>
+    <link href="../../presentations/reveal.js/css/template.css" rel="stylesheet" /> </head>
 
 <body>
     <div class="reveal">
@@ -422,8 +422,8 @@
             </section>
         </div>
     </div>
-    <script src="/presentations/reveal.js/lib/js/head.min.js"></script>
-    <script src="/presentations/reveal.js/js/reveal.js"></script>
+    <script src="../../presentations/reveal.js/lib/js/head.min.js"></script>
+    <script src="../../presentations/reveal.js/js/reveal.js"></script>
     <script>
         // More info https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
@@ -431,17 +431,17 @@
             , // More info https://github.com/hakimel/reveal.js#dependencies
             dependencies: [
                 {
-                    src: '/presentations/reveal.js/plugin/markdown/marked.js'
+                    src: '../../presentations/reveal.js/plugin/markdown/marked.js'
                 }
                 , {
-                    src: '/presentations/reveal.js/plugin/markdown/markdown.js'
+                    src: '../../presentations/reveal.js/plugin/markdown/markdown.js'
                 }
                 , {
-                    src: '/presentations/reveal.js/plugin/notes/notes.js'
+                    src: '../../presentations/reveal.js/plugin/notes/notes.js'
                     , async: true
                 }
                 , {
-                    src: '/presentations/reveal.js/plugin/highlight/highlight.js'
+                    src: '../../presentations/reveal.js/plugin/highlight/highlight.js'
                     , async: true
                     , callback: function () {
                         hljs.initHighlightingOnLoad();
