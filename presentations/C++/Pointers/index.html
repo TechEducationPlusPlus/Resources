@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Presentation</title>
+    <meta name="description" content="tsalex.tk / IT textbook / lesson 1">
+    <meta name="author" content="Alex Tsvetanov">
+    <!--
+		<link href="/presentations/reveal.js/css/impress-demo.css" rel="stylesheet">
+-->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/presentations/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/presentations/reveal.js/css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/presentations/reveal.js/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '/presentations/reveal.js/css/print/pdf.css' : '/presentations/reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <link href="/presentations/reveal.js/css/template.css" rel="stylesheet" /> </head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">Pointers in C++</div>
+                </div>
+                <div class="body">
+                    <center><img style="height:600px;" src="./pointers.png"></center>
+                </div>
+                <div class="foot">
+                    <div class="bottom">
+                        <div class="author">Alex Tsvetanov</div>
+                        <div class="organization">Tech Education ++</div>
+                        <div class="webpages"><a href="https://techedu.cf">https://techedu.cf</a></div>
+                    </div>
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+                <aside class="notes"> </aside>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">Table of Content</div>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>What are pointers?</li>
+                        <li>How to work with them?</li>
+                        <li>Examples</li>
+                        <li>Live Demo</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">What are pointers?</div>
+                </div>
+                <div class="body">
+					Pointer is address, address of variable in the memory.
+					<img src="2.png">
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">How to work with them?</div>
+                </div>
+                <div class="body">
+					<div data-markdown>
+						```cpp
+							int a = 5;
+							int *ptr = &a;
+						```
+					</div>
+					<img src="3.png" height="660px">
+					<div data-markdown>
+						```cpp
+							int f = 5;
+							int *ptr = &f;
+							cout &lt;&lt; f &lt;&lt; *ptr &lt;&lt; "\n"; // values 
+							cout &lt;&lt; &f &lt;&lt; ptr &lt;&lt; "\n"; // addresses
+						```
+					</div>
+					<code>
+					</code>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">Live demo</div>
+                </div>
+                <div class="body">
+					<strong>Task:</strong>
+					<p> Implement linked list with pointers </p>
+					<img src="binary tree.png" height="300px">
+					<img src="linked list.png" height="300px">
+				</div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="/presentations/reveal.js/lib/js/head.min.js"></script>
+    <script src="/presentations/reveal.js/js/reveal.js"></script>
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true
+            , // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+
+				{ src: '/presentations/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                {
+                    src: '/presentations/reveal.js/plugin/markdown/marked.js'
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/markdown/markdown.js'
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/notes/notes.js'
+                    , async: true
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/highlight/highlight.js'
+                    , async: true
+                    , callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+				]
+        });
+        Reveal.configure({
+            backgroundTransition: 'none'
+        })
+    </script>
+    <script src="/presentations/reveal.js/init.js"></script>
+</body>
+
+</html>

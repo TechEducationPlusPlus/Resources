@@ -1,6 +1,6 @@
 body
 {
-	background: #FBAE16;
+	background: #005A3D;
 }
 
 section
@@ -95,7 +95,7 @@ section
 
 .foot .number
 {
-	color: #5F021F;
+	color: white;;
 	position: fixed;
 	bottom: 45px;
 	left: 1%;
@@ -106,24 +106,24 @@ section
 
 .bottom .author
 {
-	color: #5F021F;/*#00a800;*/
+	color: white;
 	text-shadow: 1px 1px #5F021F;
 }
 
 .bottom .organization
 {
-	color: #5F021F;
+	color: white;
 	text-shadow: 1px 1px #5F021F;
 }
 
 .bottom .webpages
 {
-	color: #5F021F;
+	color: white;
 }
 
 a:link
 {
-	color: #5F021F;
+	color: white;
 	border: 0px;
 	text-shadow: 1px 1px #5F021F;
 	background-color: rgba(0,0,0,0);
@@ -131,21 +131,21 @@ a:link
 
 a:visited 
 {
-	color: #5F021F;
+	color: white;
 	background-color: rgba(0,0,0,0);
 	text-shadow: 0px 0px #5F021F;
 }
 
 a:hover 
 {
-	color: #5F021F;
+	color: white;
 	background-color: rgba(0,0,0,0);
 	text-shadow: 1px 1px #5F021F;
 }
 
 a:active
 {
-	color: #5F021F;
+	color: white;
 	background-color: rgba(0,0,0,0);
 	text-shadow: 1px 1px #5F021F;
 }
