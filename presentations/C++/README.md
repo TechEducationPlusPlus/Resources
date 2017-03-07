@@ -4,7 +4,11 @@
 1. Introduction to programming
 2. Input/Output stream
 3. Data types, variables
+	1. Basics
+	2. Overflow/Underflow
 4. Operators and expressions
+	1. What is ASCII table - char operators
+		1. Print ASCII table for homework
 5. Conditional statements
 	1. if/else
 	2. switch/case
