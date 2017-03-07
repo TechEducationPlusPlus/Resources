@@ -2,11 +2,16 @@
 
 ##C++ Fundamentals
 1. Introduction to programming
-2. Data types, variables
-3. Operators and expressions
-4. Input/Output stream
+2. Input/Output stream
+3. Data types, variables
+4. Operators and expressions
 5. Conditional statements
+	1. if/else
+	2. switch/case
 6. Loops
+	1. while
+	2. do/while
+	3. for
 7. Arrays
 8. Workshop &amp; First Exam
 

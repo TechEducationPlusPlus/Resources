@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Presentation</title>
+    <meta name="author" content="Alex Tsvetanov">
+    <!--
+		<link href="/presentations/reveal.js/css/impress-demo.css" rel="stylesheet">
+-->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/presentations/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/presentations/reveal.js/css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/presentations/reveal.js/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '/presentations/reveal.js/css/print/pdf.css' : '/presentations/reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <link href="/presentations/reveal.js/css/template.css" rel="stylesheet" /> </head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">Data Types and Varaibles in C++</div>
+                </div>
+                <div class="body">
+                    <center><img style="height:600px;" src="./intro.jpg"></center>
+                </div>
+                <div class="foot">
+                    <div class="bottom">
+                        <div class="author">Alex Tsvetanov</div>
+                        <div class="organization">Tech Education ++</div>
+                        <div class="webpages"><a href="https://techedu.cf">https://techedu.cf</a></div>
+                    </div>
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+                <aside class="notes"> </aside>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">Table of Content</div>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>What is variable?</li>
+                        <li>Types in C++</li>
+                        <li>Examples</li>
+                        <li>Live Demo</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">What is variable?</div>
+                </div>
+                <div class="body">
+					<table>
+						<tr>
+							<td style="border: 2px solid red; background-color: rgba(255, 0, 0, 0.15);">
+								Variable Definition
+							</td>
+							<td style="width: 43%">
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 2px solid red; background-color: rgba(255, 0, 0, 0.15);" colspan="2">
+								an element, feature, or factor that is liable to vary or change.
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td style="text-align: right; border: 2px solid red; background-color: rgba(255, 0, 0, 0.15);">
+								English
+							</td>
+						</tr>
+					</table>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">Data Types</div>
+                </div>
+                <div class="body">
+					<ul>
+						<li>short int</li>
+						<li>int</li>
+						<li>long long int</li>
+						<li>unsigned int</li>
+						<li>unsigned long long int</li>
+						<li>bool - true/false type</li>
+						<li>char - symbolic type</li>
+						<li>float - real numbers</li>
+						<li>double - real numbers</li>
+					</ul>
+					<div data-markdown>
+						```cpp
+							short small_number = 30'000;
+							int number = 1'000'000'000;
+							long long big_number = 1'000'000'000'000'000'000;
+
+							bool I_am_free = false;
+
+							char my_favourite_letter = 'A';
+
+							float mark_on_test = 5.5;
+							double profit_of_bank1 = 10000.65332;
+							double profit_of_bank2 = 100.65332;
+						```
+					</div>
+					<div data-markdown>
+						```cpp
+							int f = 5;
+							int my_age;
+							cin &gt;&gt; my_age; // input values of variable
+							cout &lt;&lt; f &lt;&lt; my_age &lt;&lt; "\n"; // output values of variables 
+						```
+					</div>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">Live demo</div>
+                </div>
+                <div class="body">
+				</div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="/presentations/reveal.js/lib/js/head.min.js"></script>
+    <script src="/presentations/reveal.js/js/reveal.js"></script>
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true
+            , // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+
+				{ src: '/presentations/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                {
+                    src: '/presentations/reveal.js/plugin/markdown/marked.js'
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/markdown/markdown.js'
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/notes/notes.js'
+                    , async: true
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/highlight/highlight.js'
+                    , async: true
+                    , callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+				]
+        });
+        Reveal.configure({
+            backgroundTransition: 'none'
+        })
+    </script>
+    <script src="/presentations/reveal.js/init.js"></script>
+</body>
+
+</html>
