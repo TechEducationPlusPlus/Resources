@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Presentation</title>
+    <meta name="author" content="Alex Tsvetanov">
+    <!--
+		<link href="/presentations/reveal.js/css/impress-demo.css" rel="stylesheet">
+-->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/presentations/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/presentations/reveal.js/css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/presentations/reveal.js/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '/presentations/reveal.js/css/print/pdf.css' : '/presentations/reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <link href="/presentations/reveal.js/css/template.css" rel="stylesheet" /> </head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+					<div class="title">Overflow/Underflow in C++<br>Casting in C++</div>
+                </div>
+                <div class="body">
+                    <center><img style="height:600px;" src="./intro.jpg"></center>
+                </div>
+                <div class="foot">
+                    <div class="bottom">
+                        <div class="author">Alex Tsvetanov</div>
+                        <div class="organization">Tech Education ++</div>
+                        <div class="webpages"><a href="https://techedu.cf">https://techedu.cf</a></div>
+                    </div>
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+                <aside class="notes"> </aside>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">Table of Content</div>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>What is overflow?</li>
+                        <li>How to avoid it?</li>
+                        <li>What is underflow?</li>
+                        <li>How to avoid it?</li>
+						<li>What is casting?</li>
+                        <li>Examples</li>
+                        <li>Live Demo</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">What is overflow?</div>
+                </div>
+                <div class="body">
+					When the value assigned to a variable is greater than the maximum allowable limit of an integer.<br>
+					<img src="overflow.jpg">
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">How to avoid it?</div>
+                </div>
+                <div class="body">
+					You must choose the correct type for each variable that you use<br>in your code.<br>
+					<div data-markdown>
+						```cpp
+							short big_number = 1'000'000'000'000; //overflow - max value of 'short' is 2^15 - 1 = 32'767 &lt; 10^12
+							//this variable must be a 'long long' integer 
+						```
+					</div>
+					When you set 'short' variable to 32'770 &gt; 32'767 (for example), it is setted to -32766 (overflow)<br>
+					-32768, -32767, <em><strong>-32766</strong></em>, -32765, -32764, ..., 32764, 32765, 32766, 32767, 32767
+					<div data-markdown>
+						```cpp
+							short f = 32'770;
+							cout &lt;&lt; f &lt;&lt; "\n"; // output -32766
+						```
+					</div>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+                    <div class="logo"></div>
+                    <div class="title">What is underflow?</div>
+                </div>
+                <div class="body">
+					When the value assigned to a variable is less than the minimum allowable limit of an integer.<br>
+					<img src="underflow.png">
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">How to avoid it?</div>
+                </div>
+                <div class="body">
+					You must choose the correct type for each variable that you use<br>in your code.<br>
+					<div data-markdown>
+						```cpp
+							short big_number = -40'000; //underflow - min value of 'short' is -2^15 = -32'768 &gt; -40'000
+							//this variable must be a 'int' integer 
+						```
+					</div>
+					When you set 'short' variable to -32'769 &lt; -32'768 (for example), it is setted to 32767 (underflow)<br>
+					-32768, -32767, -32765, -32764, ..., 32764, 32765, 32766, 32767, <em><strong>32767</strong></em>
+					<div data-markdown>
+						```cpp
+							short f = -32'769;
+							cout &lt;&lt; f &lt;&lt; "\n"; // output 32767
+						```
+					</div>
+                </div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">Casting</div>
+                </div>
+                <div class="body">
+					A cast is a special operator that forces one data type to be converted into another.
+					<div data-markdown>
+						```cpp
+							cout &lt;&lt; (short)(-32'769) &lt;&lt; (unsigned int)(-1) &lt;&lt; "\n"; // output 32767 and max value of 'int'
+						```
+					</div>
+				</div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+            <section>
+                <div class="head">
+					<div class="logo"></div>
+                    <div class="title">Live demo</div>
+                </div>
+                <div class="body">
+				</div>
+                <br>
+                <br>
+                <div class="foot">
+                    <div class="number"> </div>
+                    <div class="follow"> </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="/presentations/reveal.js/lib/js/head.min.js"></script>
+    <script src="/presentations/reveal.js/js/reveal.js"></script>
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true
+            , // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+
+				{ src: '/presentations/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                {
+                    src: '/presentations/reveal.js/plugin/markdown/marked.js'
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/markdown/markdown.js'
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/notes/notes.js'
+                    , async: true
+                }
+                , {
+                    src: '/presentations/reveal.js/plugin/highlight/highlight.js'
+                    , async: true
+                    , callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+				]
+        });
+        Reveal.configure({
+            backgroundTransition: 'none'
+        })
+    </script>
+    <script src="/presentations/reveal.js/init.js"></script>
+</body>
+
+</html>

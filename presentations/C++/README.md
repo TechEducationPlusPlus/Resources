@@ -6,6 +6,7 @@
 3. Data types, variables
 	1. Basics
 	2. Overflow/Underflow
+	3. Casts
 4. Operators and expressions
 	1. What is ASCII table - char operators
 		1. Print ASCII table for homework
