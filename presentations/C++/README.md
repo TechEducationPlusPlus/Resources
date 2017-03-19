@@ -18,7 +18,7 @@
 	2. do/while
 	3. for
 7. Arrays
-8. Workshop &amp; First Exam
+8. Workshop & First Exam
 
 ## C++ Advanced
 1. Multidimentional arrays
@@ -26,6 +26,6 @@
 3. Numerical systems
 4. Workshop
 5. STL Strings
-6. Exceptions in C&23;
+6. Exceptions in C++
 7. Files
-8. Workshop &amp; Second Exam
+8. Workshop & Second Exam
