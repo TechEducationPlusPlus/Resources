@@ -1,4 +1,5 @@
 # C++17
+## C++ is good language if you want to make algorithms, so you can see <a href="http://infocourse.techedu.cf/tracks/Algorithms">Algorithms Track</a>
 
 ## C++ Fundamentals
 1. <a href="http://infocourse.techedu.cf/courses/C++/videos/Introduction+to+C%2b%2b">Introduction to programming (available)</a>
@@ -30,7 +31,10 @@
 7. Files
 8. Workshop & Second Exam
 
-## C++ is good language if you want to make algorithms, so you can see <a href="http://infocourse.techedu.cf/tracks/Algorithms">Algorithms Track</a>
+## C++ Expert
+1. ``struct`` and ``class``
+	syntax and logic, where are the differences
+2. Inheritance in C++
 
 ## C++ Graphics
 ### OpenGL
