@@ -1,24 +1,24 @@
 # C++ (C++11 and newer)
 
 ## C++ Fundamentals
-1. Introduction to programming
-2. Input/Output stream
+1. <a href="http://infocourse.techedu.cf/courses/C++/videos/Introduction+to+C%2b%2b">Introduction to programming (available)</a>
+2. <a href="http://infocourse.techedu.cf/courses/C++/videos/IO%20Stream">Input/Output stream (available)</a>
 3. Data types, variables
-	1. Basics
-	2. Overflow/Underflow
-	3. Casts
+	1. <a href="http://infocourse.techedu.cf/courses/C++/videos/DataTypesVariables">Basics (available)</a>
+	2. <a href="http://infocourse.techedu.cf/courses/C++/videos/OverUnderCast">Overflow/Underflow & Casts (available)</a>
 4. Operators and expressions
-	1. What is ASCII table - char operators
-		1. Print ASCII table for homework
-5. Conditional statements
+5. Char
+	What is ASCII table - char operators
+	1. Print ASCII table for homework
+6. Conditional statements
 	1. if/else
 	2. switch/case
-6. Loops
+7. Loops
 	1. while
 	2. do/while
 	3. for
-7. Arrays
-8. Workshop & First Exam
+8. Arrays
+9. Workshop & First Exam
 
 ## C++ Advanced
 1. Multidimentional arrays
