@@ -1,6 +1,6 @@
 # C++17
 
-## C++ Fundamentals
+## 1. C++ Fundamentals
 1. <a href="http://infocourse.techedu.cf/courses/C++/videos/Introduction+to+C%2b%2b">Introduction to programming (available)</a>
 2. <a href="http://infocourse.techedu.cf/courses/C++/videos/IO%20Stream">Input/Output stream (available)</a>
 3. Data types, variables
@@ -20,7 +20,7 @@
 8. Arrays
 9. Workshop & First Exam
 
-## C++ Advanced
+## 2. C++ Advanced
 1. Multidimentional arrays
 2. Functions
 3. Numerical systems
@@ -30,18 +30,18 @@
 7. Files
 8. Workshop & Second Exam
 
-## C++ Expert
+## 3. C++ Expert
 1. ``struct`` and ``class``
 	syntax and logic, where are the differences
 2. Inheritance in C++
 
-## C++ is good language if you want to make algorithms, so you can see <a href="http://infocourse.techedu.cf/tracks/Algorithms">Algorithms Track</a>
+### C++ is good language if you want to make algorithms, so you can see <a href="http://infocourse.techedu.cf/tracks/Algorithms">Algorithms Track</a>
 
-## C++ Graphics
-### OpenGL
+## Specialization: C++ Graphics
+### 1. OpenGL
 	not planned yet
-### OpenCV
+### 2. OpenCV
 	not planned yet
 
-## C++ Web Dev (FastCGI)
+## Specialization: C++ Web Dev (FastCGI)
 	not planned yet
