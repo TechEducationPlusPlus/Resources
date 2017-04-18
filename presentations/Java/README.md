@@ -23,7 +23,7 @@
 2. Functions
 3. Numerical systems
 4. Workshop
-5. STL Strings
+5. strings
 6. Exceptions in Java
 7. Files
 8. Workshop & Second Exam
