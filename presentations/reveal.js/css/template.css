@@ -184,3 +184,40 @@ ul.resources>li>.name
 {
 	font-weight: bold;
 }
+ul.plus {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.plus>li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul.plus>li:before {
+  content: "+ ";
+  padding-right: 5px;
+}
+ul.normal {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.normal>li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul.normal>li:before {
+  content: "";
+  padding-right: 0px;
+}
+p.nb {
+    text-align: justify;
+    text-justify: inter-word;
+	border-right: 25px solid rgba(0,0,0,0);
+}
+.button-1 {font-size: 35px;}
+.button-4 {font-size: 50px;}
