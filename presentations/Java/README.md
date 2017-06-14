@@ -4,8 +4,8 @@
 
 ## 1. Java Fundamentals
 1. Introduction to programming
-2. Input/Output stream
-3. Data types, variables
+2. Data types, variables
+3. Input/Output stream
 4. Operators and expressions
 5. Char
 6. Conditional statements
