@@ -35,7 +35,7 @@
 	syntax and logic, where are the differences
 2. Inheritance in C++
 
-### C++ is good language if you want to make algorithms, so you can see <a href="http://infocourse.techedu.cf/tracks/Algorithms">Algorithms Track</a>
+### C++ is good language if you want to make algorithms,<br>so you can see <a href="http://infocourse.techedu.cf/tracks/Algorithms">Algorithms Track</a>
 
 ## Specialization: C++ Graphics
 ### 1. OpenGL
