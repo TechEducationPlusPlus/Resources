@@ -8,8 +8,6 @@
 	2. <a href="http://infocourse.techedu.bg/courses/C++/videos/OverUnderCast">Overflow/Underflow & Casts (available)</a>
 4. <a href="http://infocourse.techedu.bg/courses/C++/videos/OverUnderCast">Operators and expressions (available)</a>
 5. <a href="http://infocourse.techedu.bg/courses/C++1/videos/chars">Char (available)</a>
-	What is ASCII table - char operators
-	1. Print ASCII table for homework
 6. Conditional statements
 	1. <a href="http://infocourse.techedu.bg/courses/C++1/videos/if-else">if/else (available)</a>
 	2. <a href="http://infocourse.techedu.bg/courses/C++1/videos/switch-case">switch/case (available)</a>
