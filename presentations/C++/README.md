@@ -9,13 +9,13 @@
 4. <a href="http://infocourse.techedu.bg/courses/C++/videos/OverUnderCast">Operators and expressions (available)</a>
 5. <a href="http://infocourse.techedu.bg/courses/C++1/videos/chars">Char (available)</a>
 6. Conditional statements
-	1. <a href="http://infocourse.techedu.bg/courses/C++1/videos/if-else">if/else (available)</a>
-	2. <a href="http://infocourse.techedu.bg/courses/C++1/videos/switch-case">switch/case (available)</a>
+	1. <a href="http://infocourse.techedu.bg/courses/C++1/videos/if-else">``if/else`` (available)</a>
+	2. <a href="http://infocourse.techedu.bg/courses/C++1/videos/switch-case">``switch/case`` and ``bool`` operations (available)</a>
 7. <a href="http://infocourse.techedu.bg/courses/C++1/videos/LoopsOperators">Loops (available)</a>
-	1. while
-	2. do/while
-	3. for
-8. <a href="http://infocourse.techedu.bg/courses/C++1/videos/NestedLoops">Nested loops, break/continue (available)</a>
+	1. ``while``
+	2. ``do/while``
+	3. ``for``
+8. <a href="http://infocourse.techedu.bg/courses/C++1/videos/NestedLoops">Nested loops, ``break/continue`` (available)</a>
 9. <a href="http://infocourse.techedu.bg/courses/C++1/videos/LoopsWorkshop">Workshop & First Exam (available)</a>
 
 ## 2. C++ Advanced
